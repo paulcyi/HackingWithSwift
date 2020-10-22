@@ -13,6 +13,9 @@ struct ContentView: View {
     
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    // 1. Add an @State property to store the user's score, modify it when they get an answer right or wrong, then display it in the alert.
+    @State private var playerScore: Int = 0
+    @State private var alertMessage = ""
     
     
     var body: some View {
@@ -28,7 +31,7 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .fontWeight(.black)
                 }
-                
+
                 ForEach(0 ..< 3) { number in
                     Button(action: {
                         self.flagTapped(number)
@@ -40,12 +43,17 @@ struct ContentView: View {
                             .shadow(color: .black, radius: 2)
                     }
                 }
-                
+                Spacer()
+                // 2. Show the player's current score in a label directly below the flags.
+                Text("Your score is \(playerScore)")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .fontWeight(.black)
                 Spacer()
             }
         }
         .alert(isPresented: $showingScore) {
-            Alert(title: Text(scoreTitle), message: Text("Your score is ???"), dismissButton: .default(Text("Continue")) {
+            Alert(title: Text(scoreTitle), message: Text(alertMessage), dismissButton: .default(Text("Continue")) {
                 self.askQuestion()
             })
         }
@@ -53,9 +61,13 @@ struct ContentView: View {
     
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
-            scoreTitle = "Correct"
+            scoreTitle = "Correct!"
+            alertMessage = "Your score is \(playerScore)"
+            playerScore += 1
         } else {
             scoreTitle = "Wrong"
+            // 3. When someone chooses the wrong flag, tell them their mistake in your alert message - something like "Wrong! That's the flag of France," for example.
+            alertMessage = "That's the flag of \(countries[number])"
         }
         
         showingScore = true
