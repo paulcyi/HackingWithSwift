@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sxL-ZB-lrI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17504.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="598-cu-mIp">
+                                <rect key="frame" x="107" y="140" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scw-Mt-Ik4">
+                                <rect key="frame" x="107" y="343" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1C-vE-NXs">
+                                <rect key="frame" x="107" y="538" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e1C-vE-NXs" firstAttribute="centerX" secondItem="Scw-Mt-Ik4" secondAttribute="centerX" id="EL3-g9-Pu4"/>
+                            <constraint firstItem="598-cu-mIp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FDU-aj-mwE"/>
+                            <constraint firstItem="Scw-Mt-Ik4" firstAttribute="top" secondItem="598-cu-mIp" secondAttribute="bottom" constant="103" id="JVr-VH-2eX"/>
+                            <constraint firstItem="e1C-vE-NXs" firstAttribute="top" secondItem="Scw-Mt-Ik4" secondAttribute="bottom" constant="95" id="PN0-pS-A9S"/>
+                            <constraint firstItem="Scw-Mt-Ik4" firstAttribute="centerX" secondItem="598-cu-mIp" secondAttribute="centerX" id="mVw-M5-y6j"/>
+                            <constraint firstItem="598-cu-mIp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="zUt-Gu-jky"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0ew-DS-4nr"/>
+                    <connections>
+                        <outlet property="button1" destination="598-cu-mIp" id="GdA-Wi-qoF"/>
+                        <outlet property="button2" destination="Scw-Mt-Ik4" id="6u8-ko-UDn"/>
+                        <outlet property="button3" destination="e1C-vE-NXs" id="A5j-Mc-URy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="75.669642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iAR-lE-qrK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxL-ZB-lrI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1yC-ga-Ivo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PJV-Qu-pTa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5f-XR-Iz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
