@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var button3: UIButton!
     
     var countries = [String]()
+    var questionCount = 0
     var correctAnswer = 0
     var score = 0
     
@@ -32,6 +33,9 @@ class ViewController: UIViewController {
         "uk", "us"]
         
         askQuestion(action: nil)
+        
+        // 1. Try showing the player's score in the navigation bar, alongside the flag to guess.
+        self.navigationItem.title = "\(countries[correctAnswer].uppercased()) - Score: \(score)"
     }
     
     func askQuestion(action: UIAlertAction!) {
@@ -51,14 +55,27 @@ class ViewController: UIViewController {
         if sender.tag == correctAnswer {
             title = "Correct"
             score += 1
+            questionCount += 1
         } else {
-            title = "Wrong"
+            // 3. When someone chooses the wrong flag, tell them their mistake in your alert message - something like "Wrong! That's the flag of France," for example.
+            title = "Wrong! That's the flag of \(countries[sender.tag].uppercased())"
             score -= 1
+            questionCount += 1
         }
         
-        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
-        present(ac, animated: true)
+        // 2. Keep track of how many questions have been asked, and show one fianl alert controller after they have answered 10. This should show their final score.
+        if questionCount < 10 {
+            let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+            present(ac, animated: true)
+        } else {
+            let ac = UIAlertController(title: title, message: "Game Over. Your final score is \(score) out of 10.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+            present(ac, animated: true)
+        }
+        
+       
+        
     }
     
 }
