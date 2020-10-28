@@ -13,6 +13,7 @@
 		4B53A2B42546809F00CA4982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B53A2B32546809F00CA4982 /* Assets.xcassets */; };
 		4B53A2B72546809F00CA4982 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B53A2B62546809F00CA4982 /* Preview Assets.xcassets */; };
 		4B53A2BA2546809F00CA4982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B53A2B82546809F00CA4982 /* LaunchScreen.storyboard */; };
+		4B53A2C32548D6A500CA4982 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4B53A2C22548D6A500CA4982 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4B53A2B62546809F00CA4982 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B53A2B92546809F00CA4982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B53A2BB2546809F00CA4982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B53A2C22548D6A500CA4982 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4B53A2B32546809F00CA4982 /* Assets.xcassets */,
 				4B53A2B82546809F00CA4982 /* LaunchScreen.storyboard */,
 				4B53A2BB2546809F00CA4982 /* Info.plist */,
+				4B53A2C22548D6A500CA4982 /* SleepCalculator.mlmodel */,
 				4B53A2B52546809F00CA4982 /* Preview Content */,
 			);
 			path = BetterRest;
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B53A2AE2546809E00CA4982 /* AppDelegate.swift in Sources */,
+				4B53A2C32548D6A500CA4982 /* SleepCalculator.mlmodel in Sources */,
 				4B53A2B02546809E00CA4982 /* SceneDelegate.swift in Sources */,
 				4B53A2B22546809E00CA4982 /* ContentView.swift in Sources */,
 			);
