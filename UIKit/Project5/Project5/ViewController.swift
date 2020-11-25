@@ -39,9 +39,9 @@ class ViewController: UITableViewController {
         let ac = UIAlertController(title: "Enter answer", message: nil, preferredStyle: .alert)
         ac.addTextField()
 
-        let submitAction = UIAlertAction(title: "Submit", style: .default) { [weak self, weak ac] action in
-            guard let answer = ac?.textFields?[0].text else { return }
-            self?.submit(answer)
+        let submitAction = UIAlertAction(title: "Submit", style: .default) { [unowned self, ac] action in
+            let answer = ac.textFields![0]
+            self.submit(answer: answer.text!)
         }
 
         ac.addAction(submitAction)
@@ -74,8 +74,11 @@ class ViewController: UITableViewController {
         return misspelledRange.location == NSNotFound
     }
     
-    func submit(_ answer: String) {
+    func submit(answer: String) {
         let lowerAnswer = answer.lowercased()
+
+        let errorTitle: String
+        let errorMessage: String
 
         if isPossible(word: lowerAnswer) {
             if isOriginal(word: lowerAnswer) {
@@ -84,9 +87,25 @@ class ViewController: UITableViewController {
 
                     let indexPath = IndexPath(row: 0, section: 0)
                     tableView.insertRows(at: [indexPath], with: .automatic)
+
+                    return
+                } else {
+                    errorTitle = "Word not recognised"
+                    errorMessage = "You can't just make them up, you know!"
                 }
+            } else {
+                errorTitle = "Word used already"
+                errorMessage = "Be more original!"
             }
+        } else {
+            guard let title = title?.lowercased() else { return }
+            errorTitle = "Word not possible"
+            errorMessage = "You can't spell that word from \(title)"
         }
+
+        let ac = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
