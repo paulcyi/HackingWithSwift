@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BB8048125735834004282E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8048025735834004282E6 /* LaunchScreen.storyboard */; };
+		4BB80486257358B0004282E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB80485257358B0004282E6 /* Preview Assets.xcassets */; };
 		4BECF9B82572248E002B1F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BECF9B72572248E002B1F6C /* Assets.xcassets */; };
-		4BECF9BF2572248E002B1F6C /* Animations MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4BECF9BE2572248E002B1F6C /* Animations MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4BECF9C42572248E002B1F6C /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BECF9C32572248E002B1F6C /* Messages.framework */; };
-		4BECF9C72572248E002B1F6C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BECF9C62572248E002B1F6C /* MessagesViewController.swift */; };
-		4BECF9CA2572248E002B1F6C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BECF9C82572248E002B1F6C /* MainInterface.storyboard */; };
-		4BECF9CC2572248F002B1F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BECF9CB2572248F002B1F6C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +29,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				4BECF9BF2572248E002B1F6C /* Animations MessagesExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,15 +36,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4BECF9B42572248D002B1F6C /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB8047D25735800004282E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BB8047E2573580E004282E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4BB8047F25735818004282E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4BB8048025735834004282E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BB80485257358B0004282E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4BECF9B42572248D002B1F6C /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Animations.app; path = "/Users/paulyi/Developer/Hacking With Swift/SwiftUI/Animations/build/Debug-iphoneos/Animations.app"; sourceTree = "<absolute>"; };
 		4BECF9B72572248E002B1F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BECF9B92572248E002B1F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BECF9BE2572248E002B1F6C /* Animations MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Animations MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BECF9C32572248E002B1F6C /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
-		4BECF9C62572248E002B1F6C /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		4BECF9C92572248E002B1F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		4BECF9CB2572248F002B1F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4BECF9CD2572248F002B1F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BECF9BE2572248E002B1F6C /* Animations MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; name = "Animations MessagesExtension.appex"; path = "/Users/paulyi/Developer/Hacking With Swift/SwiftUI/Animations/build/Debug-iphoneos/Animations MessagesExtension.appex"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,58 +52,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BECF9C42572248E002B1F6C /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BB80484257358B0004282E6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4BB80485257358B0004282E6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		4BECF9AD2572248D002B1F6C = {
 			isa = PBXGroup;
 			children = (
 				4BECF9B62572248D002B1F6C /* Animations */,
-				4BECF9C52572248E002B1F6C /* Animations MessagesExtension */,
-				4BECF9C22572248E002B1F6C /* Frameworks */,
-				4BECF9B52572248D002B1F6C /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		4BECF9B52572248D002B1F6C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4BECF9B42572248D002B1F6C /* Animations.app */,
-				4BECF9BE2572248E002B1F6C /* Animations MessagesExtension.appex */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4BECF9B62572248D002B1F6C /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				4BB8047D25735800004282E6 /* AppDelegate.swift */,
+				4BB8047E2573580E004282E6 /* SceneDelegate.swift */,
+				4BB8047F25735818004282E6 /* ContentView.swift */,
 				4BECF9B72572248E002B1F6C /* Assets.xcassets */,
+				4BB8048025735834004282E6 /* LaunchScreen.storyboard */,
 				4BECF9B92572248E002B1F6C /* Info.plist */,
+				4BB80484257358B0004282E6 /* Preview Content */,
 			);
 			path = Animations;
-			sourceTree = "<group>";
-		};
-		4BECF9C22572248E002B1F6C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4BECF9C32572248E002B1F6C /* Messages.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4BECF9C52572248E002B1F6C /* Animations MessagesExtension */ = {
-			isa = PBXGroup;
-			children = (
-				4BECF9C62572248E002B1F6C /* MessagesViewController.swift */,
-				4BECF9C82572248E002B1F6C /* MainInterface.storyboard */,
-				4BECF9CB2572248F002B1F6C /* Assets.xcassets */,
-				4BECF9CD2572248F002B1F6C /* Info.plist */,
-			);
-			path = "Animations MessagesExtension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +150,7 @@
 				Base,
 			);
 			mainGroup = 4BECF9AD2572248D002B1F6C;
-			productRefGroup = 4BECF9B52572248D002B1F6C /* Products */;
+			productRefGroup = 4BECF9AD2572248D002B1F6C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -189,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BECF9B82572248E002B1F6C /* Assets.xcassets in Resources */,
+				4BB80486257358B0004282E6 /* Preview Assets.xcassets in Resources */,
+				4BB8048125735834004282E6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +175,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BECF9CC2572248F002B1F6C /* Assets.xcassets in Resources */,
-				4BECF9CA2572248E002B1F6C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +185,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BECF9C72572248E002B1F6C /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,17 +197,6 @@
 			targetProxy = 4BECF9C02572248E002B1F6C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4BECF9C82572248E002B1F6C /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BECF9C92572248E002B1F6C /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4BECF9CE2572248F002B1F6C /* Debug */ = {
@@ -393,7 +358,6 @@
 		4BECF9D52572248F002B1F6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Z7SV6KDUH;
@@ -408,7 +372,6 @@
 		4BECF9D62572248F002B1F6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Z7SV6KDUH;
