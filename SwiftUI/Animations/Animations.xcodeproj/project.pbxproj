@@ -36,15 +36,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B73FDB52573702400195CD3 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B73FDB62573702400195CD3 /* Animations MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; name = "Animations MessagesExtension.appex"; path = "/Users/paulyi/Developer/Hacking With Swift/SwiftUI/Animations/build/Debug-iphoneos/Animations MessagesExtension.appex"; sourceTree = "<absolute>"; };
 		4BB8047D25735800004282E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB8047E2573580E004282E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4BB8047F25735818004282E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BB8048025735834004282E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BB80485257358B0004282E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4BECF9B42572248D002B1F6C /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Animations.app; path = "/Users/paulyi/Developer/Hacking With Swift/SwiftUI/Animations/build/Debug-iphoneos/Animations.app"; sourceTree = "<absolute>"; };
 		4BECF9B72572248E002B1F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BECF9B92572248E002B1F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BECF9BE2572248E002B1F6C /* Animations MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; name = "Animations MessagesExtension.appex"; path = "/Users/paulyi/Developer/Hacking With Swift/SwiftUI/Animations/build/Debug-iphoneos/Animations MessagesExtension.appex"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				4BECF9B62572248D002B1F6C /* Animations */,
+				4B73FDB52573702400195CD3 /* Animations.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,7 +105,7 @@
 			);
 			name = Animations;
 			productName = Animations;
-			productReference = 4BECF9B42572248D002B1F6C /* Animations.app */;
+			productReference = 4B73FDB52573702400195CD3 /* Animations.app */;
 			productType = "com.apple.product-type.application.messages";
 		};
 		4BECF9BD2572248E002B1F6C /* Animations MessagesExtension */ = {
@@ -121,7 +122,7 @@
 			);
 			name = "Animations MessagesExtension";
 			productName = "Animations MessagesExtension";
-			productReference = 4BECF9BE2572248E002B1F6C /* Animations MessagesExtension.appex */;
+			productReference = 4B73FDB62573702400195CD3 /* Animations MessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
